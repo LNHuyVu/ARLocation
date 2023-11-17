@@ -11,18 +11,18 @@
 
   <body>
     <a-scene
-      vr-mode-ui="enabled: false"
-      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
-    >
-      <a-text
-        gltf-model="./image-tracking/nft/scene.gltf"
-        scale="3 3 3"
-        position="0 0 0"
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: 10.787594782511695; longitude: 106.71609908960423"
-      ></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
+    vr-mode-ui="enabled: false"
+    arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+  >
+    <a-entity
+      gltf-model="./image-tracking/nft/scene.gltf"
+      scale="90 90 90"
+      position="0 0 -90"
+      look-at="[gps-camera]"
+      gps-entity-place="latitude: 10.787501893257568; longitude: 106.71613656331016"
+
+    ></a-entity>
+    <a-camera rotation-reader gps-camera></a-camera>
+  </a-scene>
   </body>
 </html>
